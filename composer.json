@@ -1,0 +1,21 @@
+{
+    "name": "chrlvclaudiu/htaccess-env",
+    "type": "composer-plugin",
+    "minimum-stability": "dev",
+    "license": "GPL License",
+    "require": {
+        "composer-plugin-api": "^1.1"
+    },
+    "extra": {
+        "class": "dreamproduction\\Composer\\Htaccess"
+    },
+    "authors": [
+	    {
+	      "name": "Claudiu Chirilov",
+	      "email": "claudiu@dreamproduction.com"
+	    }
+	],
+    "autoload": {
+        "psr-4": {"dreamproduction\\Composer\\": "src/"}
+    }
+}
