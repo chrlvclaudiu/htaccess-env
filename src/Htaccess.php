@@ -9,8 +9,8 @@ use Composer\Plugin\PluginInterface;
 use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\EventDispatcher\Event;
 use Composer\IO\IOInterface;
-use Composer\Plugin\PluginEvents;
 use Composer\Installer\PackageEvents;
+use Composer\Script\ScriptEvents;
 
 
 class Htaccess implements PluginInterface, EventSubscriberInterface {
@@ -32,22 +32,22 @@ class Htaccess implements PluginInterface, EventSubscriberInterface {
    */
   protected $executor;
 
-	public function activate(Composer $composer, IOInterface $io) {
-	    $this->composer = $composer;
-	    $this->io = $io;
-	    $this->eventDispatcher = $composer->getEventDispatcher();
-	    $this->executor = new ProcessExecutor($this->io);
+  public function activate(Composer $composer, IOInterface $io) {
+      $this->composer = $composer;
+      $this->io = $io;
+      $this->eventDispatcher = $composer->getEventDispatcher();
+      $this->executor = new ProcessExecutor($this->io);
     }
 
-	public static function getSubscribedEvents() {
-	    return array(
+  public static function getSubscribedEvents() {
+      return array(
         PackageEvents::POST_PACKAGE_INSTALL => 'postPackage',
         PackageEvents::POST_PACKAGE_UPDATE => 'postPackage',
         //PackageEvents::POST_PACKAGE_UNINSTALL => 'postPackage',
         //ScriptEvents::POST_INSTALL_CMD => 'postCmd',
         ScriptEvents::POST_UPDATE_CMD => 'postCmd',
-	    );
-	}
+      );
+  }
 
   /**
    * Post package event behaviour.
