@@ -7,7 +7,6 @@ use Composer\Composer;
 use Composer\Util\ProcessExecutor;
 use Composer\Plugin\PluginInterface;
 use Composer\EventDispatcher\EventSubscriberInterface;
-use Composer\EventDispatcher\Event;
 use Composer\IO\IOInterface;
 use Composer\Installer\PackageEvents;
 use Composer\Script\ScriptEvents;
