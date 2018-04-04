@@ -11,6 +11,8 @@ use Composer\EventDispatcher\Event;
 use Composer\IO\IOInterface;
 use Composer\Installer\PackageEvents;
 use Composer\Script\ScriptEvents;
+use Composer\Installer\PackageEvent;
+use Composer\Script\Event;
 
 
 class Htaccess implements PluginInterface, EventSubscriberInterface {
@@ -45,7 +47,7 @@ class Htaccess implements PluginInterface, EventSubscriberInterface {
         PackageEvents::POST_PACKAGE_UPDATE => 'postPackage',
         //PackageEvents::POST_PACKAGE_UNINSTALL => 'postPackage',
         //ScriptEvents::POST_INSTALL_CMD => 'postCmd',
-        ScriptEvents::POST_UPDATE_CMD => 'postCmd',
+        ScriptEvents::POST_UPDATE_CMD => 'postCmd'
       );
   }
 
