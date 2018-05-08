@@ -3,19 +3,12 @@
     "type": "composer-plugin",
     "minimum-stability": "dev",
     "license": "GPL-3.0-only",
-    "require": {
-        "composer-plugin-api": "^1.1"
-    },
-    "extra": {
-        "class": "dreamproduction\\Composer\\Htaccess"
-    },
+    "bin": ["bin/htaccess-env.sh"],
+    "keywords": ["htaccess", "environment", "git"],
     "authors": [
 	    {
 	      "name": "Claudiu Chirilov",
 	      "email": "claudiu@dreamproduction.com"
 	    }
-	],
-    "autoload": {
-        "psr-4": {"dreamproduction\\Composer\\": "src/"}
-    }
+	]
 }
