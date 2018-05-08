@@ -5,6 +5,9 @@
     "license": "GPL-3.0-only",
     "bin": ["bin/htaccess-env.sh"],
     "keywords": ["htaccess", "environment", "git"],
+    "extra": {
+        "class": "Dreamproduction\\HtaccessEnv"
+    },
     "authors": [
 	    {
 	      "name": "Claudiu Chirilov",
