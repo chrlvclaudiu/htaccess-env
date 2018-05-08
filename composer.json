@@ -8,7 +8,9 @@
     "extra": {
         "class": "Dreamproduction\\HtaccessEnv"
     },
-    "require": {},
+    "require": {
+        "composer-plugin-api": "^1.1"
+    },
     "requre-dev": {},
     "authors": [
 	    {
