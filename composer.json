@@ -6,7 +6,7 @@
     "bin": ["bin/htaccess-env.sh"],
     "keywords": ["htaccess", "environment", "git"],
     "extra": {
-        "class": "DreamProduction\\Composer\\Htaccess"
+        "class": "DreamProduction\\Composer\\Plugin\\Htaccess"
     },
     "require": {
         "composer-plugin-api": "^1.1"
@@ -19,6 +19,6 @@
 	    }
 	],
     "autoload": {
-        "psr-4": {"DreamProduction\\Composer\\": "src/"}
+        "psr-4": {"DreamProduction\\Composer\\Plugin\\": "src/"}
     }
 }
