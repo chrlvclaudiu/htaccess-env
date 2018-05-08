@@ -8,6 +8,8 @@
     "extra": {
         "class": "Dreamproduction\\HtaccessEnv"
     },
+    "require": {},
+    "requre-dev": {},
     "authors": [
 	    {
 	      "name": "Claudiu Chirilov",
