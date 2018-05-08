@@ -6,7 +6,7 @@
     "bin": ["bin/htaccess-env.sh"],
     "keywords": ["htaccess", "environment", "git"],
     "extra": {
-        "class": "DreamProduction\\Composer\\HtaccessEnv"
+        "class": "DreamProduction\\Composer\\Htaccess"
     },
     "require": {
         "composer-plugin-api": "^1.1"
