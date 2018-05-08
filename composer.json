@@ -19,6 +19,6 @@
 	    }
 	],
     "autoload": {
-        "psr-4": {"Dreamproduction\\HtaccessEnv\\": "src/"}
+        "psr-4": {"Dreamproduction\\": "src/"}
     }
 }
