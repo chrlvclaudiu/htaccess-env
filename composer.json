@@ -17,8 +17,5 @@
 	      "name": "Claudiu Chirilov",
 	      "email": "claudiu@dreamproduction.com"
 	    }
-	],
-    "autoload": {
-        "psr-4": {"Dreamproduction\\": "src/"}
-    }
+	]
 }
