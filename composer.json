@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "keywords": ["htaccess", "environment", "git"],
     "extra": {
-        "class": "dreamproduction\\Composer\\Plugin"
+        "class": "dreamproduction\\Composer\\Htaccess"
     },
     "require": {
         "composer-plugin-api": "^1.1"
