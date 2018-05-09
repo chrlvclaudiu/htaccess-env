@@ -11,7 +11,7 @@
         "bin/htaccess-env.sh"
     ],
     "require": {
-        "composer-plugin-api": "^1.1",
+        "composer-plugin-api": "^1.1"
     },
     "requre-dev": {},
     "authors": [
