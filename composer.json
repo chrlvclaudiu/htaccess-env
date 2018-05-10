@@ -1,5 +1,5 @@
 {
-    "name": "chrlvclaudiu/htaccess-env",
+    "name": "dreamproduction/htaccess-env",
     "type": "composer-plugin",
     "minimum-stability": "dev",
     "license": "GPL-3.0-only",
